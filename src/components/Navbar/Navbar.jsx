@@ -3,6 +3,7 @@ import './Navbar.css'
 import Toggle from '../Toggle/Toggle'
 import {Link} from "react-scroll"
 import { useContext } from "react";
+import { themeContext } from "../../Context";
 import {motion} from "framer-motion";
 
 const Navbar = () => {
