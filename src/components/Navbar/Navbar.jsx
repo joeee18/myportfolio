@@ -2,12 +2,16 @@ import React from 'react';
 import './Navbar.css'
 import Toggle from '../Toggle/Toggle'
 import {Link} from "react-scroll"
+import { useContext } from "react";
+import {motion} from "framer-motion";
 
 const Navbar = () => {
+      const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 return (
 <div className="n-wrapper" >
     <div className="n-Left">
-        <div className="n-name">Joe </div>
+        <div className="n-name" style={{ color: darkMode ? "white" : "" }}>Joe </div>
         <Toggle/>
     </div>
     <div className="n-right">
